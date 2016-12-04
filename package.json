@@ -1,0 +1,26 @@
+{
+  "name": "memory",
+  "version": "1.0.0",
+  "description": "Memory game in elm",
+  "main": "index.js",
+  "scripts": {
+    "elm:build": "elm make client/src/*.elm --output server/public/main.js --warn || true",
+    "elm:watch": "watch 'npm run elm:build' client/src/.",
+    "server:start": "node index.js",
+    "start": "npm run server:start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "elm": "^0.18.0",
+    "watch": "^1.0.1"
+  },
+  "dependencies": {
+    "good": "^7.1.0",
+    "good-console": "^6.3.1",
+    "good-squeeze": "^5.0.1",
+    "hapi": "^16.0.1",
+    "inert": "^4.0.3"
+  }
+}
